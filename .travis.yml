@@ -6,4 +6,4 @@ before_install:
   - docker build -t oawwad/docker-react -f Dockerfile.dev  .
 
 script:
-  - 0153e3ac4c27oawwad/docker-react npm run test
+  - docker run -e CI=true oawwad/docker-react npm run test
